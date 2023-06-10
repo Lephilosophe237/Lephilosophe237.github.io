@@ -1,0 +1,32 @@
+.nav-link{
+    color: white;
+}
+.nav-link:active{
+    color: white;
+}
+.carousel-inner img { 
+    max-width:100%;
+    max-height:100%;
+    width: auto; 
+    height: auto; 
+}
+.nav-item{
+    padding-right: 16px;
+    font-size: larger;
+}
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 0rem;
+    padding-bottom: 12.25rem;
+    color: #fff;
+    text-align: center;
+}
+
+.center {
+margin: auto;
+width: 70%;
+padding: 10px;
+}

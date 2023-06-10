@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ProCycling-Homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bikeshop.css">
+    <link rel="stylesheet" href="css/productshop.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+    <link rel="stylesheet" href="css/testimonial.css">
+    <link rel="stylesheet" href="css/procycling.css">
+  
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <!-- css and script carrousel product shop -->
+   <style>
+    .grid {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    color: #666666;
+    border-radius: 2px;
+    margin-bottom: 25px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.grid .grid-body {
+    padding: 15px 20px 15px 20px;
+    font-size: 0.9em;
+    line-height: 1.9em;
+}
+
+.search table tr td.rate {
+    color: #f39c12;
+    line-height: 50px;
+}
+
+.search table tr:hover {
+    cursor: pointer;
+}
+
+.search table tr td.image {
+	width: 50px;
+}
+
+.search table tr td img {
+	width: 50px;
+	height: 50px;
+}
+
+.search table tr td.rate {
+	color: #f39c12;
+	line-height: 50px;
+}
+
+.search table tr td.price {
+	font-size: 1.5em;
+	line-height: 50px;
+}
+
+.search #price1,
+.search #price2 {
+	display: inline;
+	font-weight: 600;
+}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+.pagination>li>a, .pagination>li>span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #337ab7;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+   </style>
+
+</head>
+  <body>
+    <nav class="navbar navbar-expand-lg" aria-label="Thirteenth navbar example" style=" position: absolute;z-index: 999; width: 100%;">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+            <a class="navbar-brand col-lg-3 me-0" href="#"><img src="photo/logo.png"/><span class="text-white">ProCycling</span></a>
+            <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+              <li class="nav-item">
+                <a class="nav-link" href="Homepage.html">Home</a>
+                <div class="underline"></div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Bike.html">Bike</a>
+                <div class="underline"></div>
+              </li>
+              <li class="nav-item active-link">
+                <a class="nav-link" aria-current="page" href="Bikepart.html">Bike Part</a>
+                <div class="underline"></div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Appointment.html">Appointment</a>
+                <div class="underline"></div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Service.html">Services</a>
+                <div class="underline"></div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Specialiste.html">Our Specialists</a>
+                <div class="underline"></div>
+              </li>
+            </ul>
+            <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+               <ul class="navbar-nav col-lg-3 justify-content-lg-end">
+                    <li class="nav-item"><span class="nav-link"><i class="fas fa-search" style="color: white;"></i></span></li>
+                    <li class="nav-item"><span class="nav-link"><i class="fas fa-globe" style="color: white;"></i></span></li>
+                    <li class="nav-item"><span class="nav-link"><i class="fas fa-user" style="color:white;"></i></span></li>
+                    <li class="nav-item"><span class="nav-link"><i class="fas fa-shopping-cart" style="color: #ffffff;"></i></span></li>
+               </ul>
+            </div>
+          </div>
+        </div>
+    </nav>
+      
+    <!-- Carrousel start here -->
+    <div id="myCarousel" class="carousel slide pointer-event" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="photo/part.png" class="d-block w-100" alt="..." >
+          <div class="container">
+            <div class="carousel-caption">
+              <h3>Take an appointment with one of our specialists for your repair needs or for advice on bike purchase in store.</h3>
+              <p><a class="btn btn-lg btn-light" href="#">Appointment</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="photo/mikkel-bech-yjAFnkLtKY0-unsplash.png" class="d-block w-100" alt="..." >
+          <div class="container">
+            <div class="carousel-caption">
+              <h3>Take an appointment with one of our specialists for your repair needs or for advice on bike purchase in store.</h3>
+              <p><a class="btn btn-lg btn-light" href="#">Appointment</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="photo/bike.png" class="d-block w-100" alt="..." >
+          <div class="container">
+            <div class="carousel-caption">
+              <h3>Take an appointment with one of our specialists for your repair needs or for advice on bike purchase in store.</h3>
+              <p><a class="btn btn-lg btn-light" href="#">Appointment</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+    <!-- Body of the main page -->
+    <div class="container">
+        <div style="text-align: center; padding: 25px">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center">
+              <li class="breadcrumb-item"><a href="Homepage.html">Home</a></li>
+              <li class="breadcrumb-item"><a href="Bikepart.html">Bike part</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Derailleurs</li>
+            </ol>
+          </nav>
+        </div>
+    </div>
+
+    <div class="container">
+      <div class="container">
+        <div class="row">
+          <!-- BEGIN SEARCH RESULT -->
+          <div class="col-md-12">
+            <div class="grid search">
+              <div class="grid-body">
+                <div class="row">
+                  <!-- BEGIN FILTERS -->
+                  <div class="col-md-3">
+                    <h2 class="grid-title"><i class="fa fa-filter"></i> Filters</h2>
+                    <hr>
+                    
+                    <!-- BEGIN FILTER BY CATEGORY -->
+                    <h4>By category:</h4>
+                    <div class="checkbox">
+                      <label><input type="checkbox" class="icheck" checked> Road Front Derailleurs</label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" class="icheck"> Road Rear Derailleurs</label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" class="icheck"> Mountain Front Derailleurs</label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" class="icheck"> Support & accessoire</label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" class="icheck"> Chain</label>
+                    </div>
+                    <!-- END FILTER BY CATEGORY -->
+                    
+                    <div class="padding"></div>
+                    
+                    <!-- BEGIN FILTER BY DATE -->
+                    <h4>By date:</h4>
+                    From
+                    <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input1">
+                      <input type="text" class="form-control">
+                      <span class="input-group-addon bg-blue"><i class="fa fa-th"></i></span>
+                    </div>
+                    <input type="hidden" id="dtp_input1" value="">
+                    
+                    To
+                    <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input2">
+                      <input type="text" class="form-control">
+                      <span class="input-group-addon bg-blue"><i class="fa fa-th"></i></span>
+                    </div>
+                    <input type="hidden" id="dtp_input2" value="">
+                    <!-- END FILTER BY DATE -->
+                    
+                    <div class="padding"></div>
+                    
+                    <!-- BEGIN FILTER BY PRICE -->
+                    <h4>By price:</h4>
+                    Between <div id="price1">$300</div> to <div id="price2">$800</div>
+                    <div class="slider-primary">
+                      <div class="slider slider-horizontal" style="width: 152px;"><div class="slider-track"><div class="slider-selection" style="left: 30%; width: 50%;"></div><div class="slider-handle round" style="left: 30%;"></div><div class="slider-handle round" style="left: 80%;"></div></div><div class="tooltip top hide" style="top: -30px; left: 50.1px;"><div class="tooltip-arrow"></div><div class="tooltip-inner">300 : 800</div></div><input type="text" class="slider" value="" data-slider-min="0" data-slider-max="1000" data-slider-step="1" data-slider-value="[300,800]" data-slider-tooltip="hide"></div>
+                    </div>
+                    <!-- END FILTER BY PRICE -->
+                  </div>
+                  <!-- END FILTERS -->
+                  <!-- BEGIN RESULT -->
+                  <div class="col-md-9">
+                    <h2><i class="fa fa-file-o"></i> Result</h2>
+                    <hr>
+                    <!-- BEGIN SEARCH INPUT -->
+                    <div class="input-group">
+                      <input type="text" class="form-control" value="Road Front Derailleurs">
+                      <span class="input-group-btn">
+                        <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+                      </span>
+                    </div>
+                    <!-- END SEARCH INPUT -->
+                    <p>Showing all results matching "Road Front Derailleurs"</p>
+                    
+                    <div class="padding"></div>
+                    
+                    <div class="row">
+                      <!-- BEGIN ORDER RESULT -->
+                      <div class="col-sm-6">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            Order by <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Name</a></li>
+                            <li><a href="#">Date</a></li>
+                            <li><a href="#">View</a></li>
+                            <li><a href="#">Rating</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- END ORDER RESULT -->
+                      
+                      <div class="col-md-6 text-right">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default active"><i class="fa fa-list"></i></button>
+                          <button type="button" class="btn btn-default"><i class="fa fa-th"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!-- BEGIN TABLE RESULT -->
+                    <div class="table-responsive">
+                      <table class="table table-hover">
+                        <tbody><tr>
+                          <td class="number text-center">1</td>
+                          <td class="image"><img src="https://www.bootdey.com/image/400x300/FF8C00" alt=""></td>
+                          <td class="product"><strong>Product 1</strong><br>This is the product description.</td>
+                          <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span></td>
+                          <td class="price text-right">$350</td>
+                        </tr>
+                        <tr>
+                          <td class="number text-center">2</td>
+                          <td class="image"><img src="https://www.bootdey.com/image/400x300/5F9EA0" alt=""></td>
+                          <td class="product"><strong>Product 2</strong><br>This is the product description.</td>
+                          <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></span></td>
+                          <td class="price text-right">$1,050</td>
+                        </tr>
+                        <tr>
+                          <td class="number text-center">3</td>
+                          <td class="image"><img src="https://www.bootdey.com/image/400x300" alt=""></td>
+                          <td class="product"><strong>Product 3</strong><br>This is the product description.</td>
+                          <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i></span></td>
+                          <td class="price text-right">$550</td>
+                        </tr>
+                        <tr>
+                          <td class="number text-center">4</td>
+                          <td class="image"><img src="https://www.bootdey.com/image/400x300/8A2BE2" alt=""></td>
+                          <td class="product"><strong>Product 4</strong><br>This is the product description.</td>
+                          <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span></td>
+                          <td class="price text-right">$330</td>
+                        </tr>
+                        <tr>
+                          <td class="number text-center">5</td>
+                          <td class="image"><img src="https://www.bootdey.com/image/400x300" alt=""></td>
+                          <td class="product"><strong>Product 5</strong><br>This is the product description.</td>
+                          <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></td>
+                          <td class="price text-right">$540</td>
+                        </tr>
+                        <tr>
+                          <td class="number text-center">6</td>
+                          <td class="image"><img src="https://www.bootdey.com/image/400x300/6495ED" alt=""></td>
+                          <td class="product"><strong>Product 6</strong><br>This is the product description.</td>
+                          <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span></td>
+                          <td class="price text-right">$870</td>
+                        </tr>
+                        <tr>
+                          <td class="number text-center">7</td>
+                          <td class="image"><img src="https://www.bootdey.com/image/400x300/DC143C" alt=""></td>
+                          <td class="product"><strong>Product 7</strong><br>This is the product description.</td>
+                          <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></span></td>
+                          <td class="price text-right">$620</td>
+                        </tr>
+                        <tr>
+                          <td class="number text-center">8</td>
+                          <td class="image"><img src="https://www.bootdey.com/image/400x300/9932CC" alt=""></td>
+                          <td class="product"><strong>Product 8</strong><br>This is the product description.</td>
+                          <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span></td>
+                          <td class="price text-right">$1,550</td>
+                        </tr>
+                      </tbody></table>
+                    </div>
+                    <!-- END TABLE RESULT -->
+                    
+                    <!-- BEGIN PAGINATION -->
+                    <ul class="pagination">
+                      <li class="disabled"><a href="#">«</a></li>
+                      <li class="active"><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">4</a></li>
+                      <li><a href="#">5</a></li>
+                      <li><a href="#">»</a></li>
+                    </ul>
+                    <!-- END PAGINATION -->
+                  </div>
+                  <!-- END RESULT -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END SEARCH RESULT -->
+        </div>
+        </div>
+    </div>
+    
+   
+  <hr>
+  
+  <!-- Stay up to date section -->
+  <div class="container">
+    <div style="text-align: center;">
+        <h1>Stay up to date</h1>
+    </div>
+    <div class="center">
+      <div style="text-align: center;">
+        <p>Get notified about company news, updates and be the first to get access to our promotions.</p>
+      </div>
+      
+      <div class="row">
+        <div class="col-2">
+          
+        </div>
+        <div class="col">
+          <div class="row">
+            <div class="col-8 center">
+              <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="col center">
+              <button type="submit" class="btn btn-secondary btn-lg">Subscribe</button>
+            </div>
+          </div>
+         
+        </div>
+        <div class="col-1">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer
+          class="text-center text-lg-start text-white mt-4"
+          style="background-color: #3e4551"
+          >
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase"> Get In Touch </h5>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Molestiae modi cum ipsam ad, illo possimus laborum ut
+              reiciendis obcaecati. Ducimus, quas. Corrupti, pariatur eaque?
+              Reiciendis assumenda iusto sapiente inventore animi?
+            </p>
+
+            <!-- Section: Social media -->
+            <section class="mb-4 text-center">
+        <!-- Facebook -->
+        <a
+           class="btn btn-outline-light btn-floating m-1 rounded-circle"
+           href="#!"
+           role="button"
+           ><i class="fab fa-facebook-f"></i
+          ></a>
+
+        <!-- Twitter -->
+        <a
+           class="btn btn-outline-light btn-floating m-1 rounded-circle"
+           href="#!"
+           role="button"
+           ><i class="fab fa-twitter"></i
+          ></a>
+
+        <!-- Google -->
+        <a
+           class="btn btn-outline-light btn-floating m-1 rounded-circle"
+           href="#!"
+           role="button"
+           ><i class="fab fa-google"></i
+          ></a>
+
+        <!-- Instagram -->
+        <a
+           class="btn btn-outline-light btn-floating m-1 rounded-circle"
+           href="#!"
+           role="button"
+           ><i class="fab fa-instagram"></i
+          ></a>
+
+        <!-- Linkedin -->
+        <a
+           class="btn btn-outline-light btn-floating m-1 rounded-circle"
+           href="#!"
+           role="button"
+           ><i class="fab fa-linkedin-in"></i
+          ></a>
+      </section>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            
+            <ul class="list-unstyled mb-0">
+              <li>
+                <h6 class="text-uppercase">Call Us</h6>
+                1 (234) 567-891<br>1 (234) 987-654
+              </li>
+              <li class="mt-3">
+                <h6 class="text-uppercase">Location</h6>
+                121 Rock Sreet, Ottawa, K1A 0A8 
+              </li>
+              <li class="mt-3">
+                <h6 class="text-uppercase">Business Hours</h5>
+                Mon – Fri …… 10 am – 8 pm<br>
+                Sat, Sun …… Closed
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h6 class="text-uppercase">Custumer services</h6>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Delivery</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Pricing Policy & Promo Codes</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Return policy</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Privacy policy</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Make a deposit</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">FinanceIt</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h6 class="text-uppercase">Company</h6>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Careers</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">History</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Our stores</a>
+              </li>
+              
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </section>
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      &copy;
+      <span id="copyright">
+          <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+      </span> Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/"
+         >ProCycling</a
+        >
+    </div>
+    <!-- Copyright -->
+<!-- End of .container -->
+  </footer>
+        
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+    
+    <script >
+      /*Testimonial carrousel*/
+          (function () {
+            "use strict";
+
+            var carousels = function () {
+              $(".owl-carousel1").owlCarousel({
+                loop: true,
+                center: true,
+                margin: 0,
+                responsiveClass: true,
+                nav: false,
+                responsive: {
+                  0: {
+                    items: 1,
+                    nav: false },
+
+                  680: {
+                    items: 2,
+                    nav: false,
+                    loop: false },
+
+                  1000: {
+                    items: 3,
+                    nav: true } } });
+
+
+
+            };
+
+            (function ($) {
+              carousels();
+            })(jQuery);
+          })();
+        </script>
+      
+  </body>
+</html>

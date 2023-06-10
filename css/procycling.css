@@ -1,0 +1,71 @@
+@media only screen and (max-width: 600px) {
+    .carousel-caption {
+        position: absolute;
+        right: 15%;
+        bottom: 1.25rem;
+        left: 15%;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        color: #fff;
+        text-align: center;
+    }
+    /* reduice size of h3 in caption carousel */
+    h3, .h3 {
+    font-size:15px;
+    }
+    .carousel-caption > p > a{
+        font-size:12px;
+    }
+
+    /* remove padding for shop carousel */
+    #shop .carousel {
+        padding: 0px ; 
+    }
+}
+#id_work_days{
+    height: 44px;
+    border: none;
+    overflow: hidden;
+  }
+  #id_work_days::-moz-focus-inner {
+    border: 0;
+  }
+  #id_work_days:focus {
+    outline: none;
+  }
+  #id_work_days option{
+    width: fit-content;
+    font-size: 1em;
+    text-align: center;
+    margin-right: 20px;
+    display: inline-block;
+    cursor: pointer;
+    border:rgb(161, 161, 159) solid 1px;
+    background: lightgray;
+    border-radius: 5px;
+    color: black;
+  }
+  #navbarsExample11 ul li a {
+    color: #ffffff;
+    transition: color 0.5s;
+  }
+  #navbarsExample11 ul li .underline {
+    height: 3px;
+    background-color: transparent;
+    width: 0%;
+    transition: width 0.2s, background-color 0.5s;
+    margin: 0 auto;
+  }
+  
+  #navbarsExample11 ul li.active-link .underline {
+    width: 100%;
+    background-color: white;
+  }
+  
+  #navbarsExample11 ul li:hover .underline {
+    background-color: white;
+    width: 100%;
+  }
+  
+
+  
