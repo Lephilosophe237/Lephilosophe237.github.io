@@ -75,7 +75,7 @@
 }
 .rd-day-disabled {
   cursor: default;
-  color: #fcc;
+  color: lightslategrey;
 }
 .rd-time {
   position: relative;
