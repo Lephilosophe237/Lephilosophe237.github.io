@@ -1,4 +1,7 @@
 @media only screen and (max-width: 600px) {
+  .navbar {
+    background: #f8f9fa;
+  }
     .carousel-caption {
         position: absolute;
         right: 15%;
