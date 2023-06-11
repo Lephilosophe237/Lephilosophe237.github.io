@@ -17,7 +17,7 @@
 
 </head>
   <body>
-    <nav class="navbar navbar-expand-lg" aria-label="Thirteenth navbar example" style=" position: absolute;z-index: 999; width: 100%;">
+    <nav id="bgnav" class="navbar navbar-expand-lg fixed-top" aria-label="Thirteenth navbar example" style="z-index: 999; width: 100%;">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -370,61 +370,16 @@
     <script src="js/rome.js"></script>
 
    
-    
-    <script >
-      /*Testimonial carrousel*/
-          (function () {
-            "use strict";
-
-            var carousels = function () {
-              $(".owl-carousel1").owlCarousel({
-                loop: true,
-                center: true,
-                margin: 0,
-                responsiveClass: true,
-                nav: false,
-                responsive: {
-                  0: {
-                    items: 1,
-                    nav: false },
-
-                  680: {
-                    items: 2,
-                    nav: false,
-                    loop: false },
-
-                  1000: {
-                    items: 3,
-                    nav: true } } });
-
-
-
-            };
-            (function ($) {
-              carousels();
-            })(jQuery);
-          })();
-
-          let lastname =JSON.parse(sessionStorage.getItem("appointmentdata"));
-          $("#apptdatevalue").append(lastname[0].value +" at "+lastname[1].value);
-          $("#technicianvalue").append(lastname[2].value);
-          $("#servicevalue").append(lastname[3].value);
-          if(lastname[3].value =="Tune-up"){$("#serviceprice").append("$58");}
-          else if(lastname[3].value =="Custom Build"){$("#serviceprice").append("$200");}
-          else{$("#serviceprice").append("$50");}
-          $("#clientnamevalue").append(lastname[4].value);
-          $("#clientemailvalue").append(lastname[5].value);
-          $("#clientphonevalue").append(lastname[6].value);
-          $("#clientbikevalue").append(lastname[7].value);
-
-          $(document).ready(function () {
-    // Handler for .ready() called.
-    $('html, body').animate({
-        scrollTop: $('#confirm').offset().top
-    }, 'slow');
-});
-          
-        </script>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function(){
+      if(window.scrollY==0){
+        //user is at the top of the page; no need to show the back to top button
+        document.getElementById("bgnav").setAttribute("class", "navbar navbar-expand-lg fixed-top"); 
+      } else {
+        document.getElementById("bgnav").setAttribute("class", "navbar navbar-expand-lg fixed-top bgnav2"); 
+      }
+    });
+    </script>
       
   </body>
 </html>

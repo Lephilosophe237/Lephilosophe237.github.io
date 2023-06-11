@@ -17,7 +17,7 @@
 
 </head>
   <body>
-    <nav class="navbar navbar-expand-lg" aria-label="Thirteenth navbar example" style=" position: absolute;z-index: 999; width: 100%;">
+    <nav id="bgnav" class="navbar navbar-expand-lg fixed-top" aria-label="Thirteenth navbar example" style="z-index: 999; width: 100%;">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -378,42 +378,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
-    
-    <script >
-      /*Testimonial carrousel*/
-          (function () {
-            "use strict";
-
-            var carousels = function () {
-              $(".owl-carousel1").owlCarousel({
-                loop: true,
-                center: true,
-                margin: 0,
-                responsiveClass: true,
-                nav: false,
-                responsive: {
-                  0: {
-                    items: 1,
-                    nav: false },
-
-                  680: {
-                    items: 2,
-                    nav: false,
-                    loop: false },
-
-                  1000: {
-                    items: 3,
-                    nav: true } } });
-
-
-
-            };
-
-            (function ($) {
-              carousels();
-            })(jQuery);
-          })();
-        </script>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function(){
+      if(window.scrollY==0){
+        //user is at the top of the page; no need to show the back to top button
+        document.getElementById("bgnav").setAttribute("class", "navbar navbar-expand-lg fixed-top"); 
+      } else {
+        document.getElementById("bgnav").setAttribute("class", "navbar navbar-expand-lg fixed-top bgnav2"); 
+      }
+    });
+    </script>
       
   </body>
 </html>
